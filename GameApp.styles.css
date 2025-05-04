@@ -1,0 +1,14 @@
+@import '_content/MudThemeLibrary/MudThemeLibrary.bjs0iu63f9.bundle.scp.css';
+
+/* /Components/AvatarRankComponent.razor.rz.scp.css */
+.avatar-rank[b-gevv6kob77]{position:relative}[b-gevv6kob77] .lottie-svg{position:absolute;width:300%;height:300%;top:-102%;left:-100%}
+/* /Components/TitleComponent.razor.rz.scp.css */
+[b-bqnmkgkt9e].title .title-content{padding-bottom:5px;position:relative;margin-bottom:1em;display:flex;align-items:center}[b-bqnmkgkt9e].title .title-content::before,[b-bqnmkgkt9e].title .title-content::after{content:"";position:absolute;left:0;background-color:var(--mud-palette-primary)}[b-bqnmkgkt9e].title .title-content::before{bottom:0;height:5px;width:55px}[b-bqnmkgkt9e].title .title-content::after{bottom:2px;height:1px;width:100%;max-width:75px}[b-bqnmkgkt9e].title .title-content .title-icon{font-size:inherit}
+/* /Pages/CoCaro/CoCaroPlayingPage.razor.rz.scp.css */
+.content-game-board[b-gil9k3vgqg]{overflow:hidden}.content-game-board .game-board[b-gil9k3vgqg]{display:inline-grid;position:relative;grid-gap:0;justify-content:center;box-shadow:0 0px 10px rgba(0,0,0,.5)}.content-game-board .game-board .cell[b-gil9k3vgqg]{width:30px;height:30px;border:1px solid #ddd;display:flex;justify-content:center;align-items:center;font-size:25px;font-weight:bold;background-color:#fff;cursor:pointer;transition:background-color .3s ease;font-family:f-edosz;user-select:none}.content-game-board .game-board .cell.cell-red[b-gil9k3vgqg]{color:red;cursor:not-allowed}.content-game-board .game-board .cell.cell-green[b-gil9k3vgqg]{color:green;cursor:not-allowed}.content-game-board .game-board .cell.cell-latest-move[b-gil9k3vgqg]{background-color:#fffa90;animation:highlight .5s ease-out}.content-game-board .game-board .cell.cell-win[b-gil9k3vgqg]{background-color:#ff0}.playing-user[b-gil9k3vgqg]{min-width:100px;max-width:130px}
+/* /Pages/Me/Tournament/_MyTournamentCreateDialog.razor.rz.scp.css */
+[b-zxfys3xqx9].avatar-content{position:relative}[b-zxfys3xqx9].avatar-content .avatar .mud-avatar{width:120px;height:120px}[b-zxfys3xqx9].avatar-content .mud-badge-root .mud-badge{cursor:pointer}[b-zxfys3xqx9].avatar-content .upload-content{position:absolute;bottom:-7px;left:50%}
+/* /Pages/Me/_MeNav.razor.rz.scp.css */
+[b-y9p2ss013s].avatar-content{margin-top:-100px;position:relative}[b-y9p2ss013s].avatar-content .avatar .mud-avatar{width:120px;height:120px}[b-y9p2ss013s].avatar-content .mud-badge-root .mud-badge{cursor:pointer}[b-y9p2ss013s].avatar-content .upload-content{position:absolute;bottom:-7px;left:50%}
+/* /Pages/Tournament/_TournamentDetailHeader.razor.rz.scp.css */
+.tournament-detail-header[b-ohr07cjshw]{background-color:#32333d;color:hsla(0,0%,100%,.6980392157)}

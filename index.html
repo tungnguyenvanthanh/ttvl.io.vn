@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameApp</title>
+
+    <!--<base href="/" />-->
+    <base href="tungnguyenvanthanh.github.io" />
+
+    <script>
+        window.__env = {
+            environment: "Production"  // "Development" Hoặc "Production"
+        };
+    </script>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="css/app.css?ttvl-version=1" rel="stylesheet" />
+    <link href="GameApp.styles.css?ttvl-version=1" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="app" class="min-vh-100 w-100 overflow-y-auto">
+        <div class="loading-progress-content">
+            <svg class="loading-progress">
+                <circle r="40%" cx="50%" cy="50%" />
+                <circle r="40%" cx="50%" cy="50%" />
+            </svg>
+            <div class="loading-progress-text"></div>
+            <!--<img src="_content/MudThemeLibrary/images/logo-dark-ttvl.png" width="300" />-->
+            <img src="/images/logo-splash.png" width="300" />
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+
+    <script src="_framework/blazor.webassembly.js?ttvl-version=1"></script>
+    <script src="js/site.js?ttvl-version=1"></script>
+    <!-- Nhúng js và css của MudThemeLibrary -->
+    <script src="_content/MudThemeLibrary/js/scripts.bundle.js?ttvl-version=1"></script>
+
+    <!-- Nhúng js và css của MudThemeLibrary -->
+    <script>
+        const redirectPath = sessionStorage.getItem('redirectPath');
+        if (redirectPath) {
+            sessionStorage.removeItem('redirectPath');
+            history.replaceState({}, '', redirectPath);
+        }
+    </script>
+</body>
+
+</html>
