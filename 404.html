@@ -15,7 +15,7 @@
         sessionStorage.setItem('redirectPath', path);
 
         // Redirect về index.html của project chính hoặc sub-project
-        window.location.replace(subProject + '/');
+        window.location.replace(subProject === "/" ? "/" : subProject);
     </script>
 </body>
 </html>
