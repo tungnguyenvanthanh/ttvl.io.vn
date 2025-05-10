@@ -22,8 +22,7 @@
     <meta property="twitter:title" content="TTVL | Game trí tuệ, dân gian & công cụ giải trí online" />
     <meta property="twitter:description" content="Khám phá cờ caro, cờ vua, cờ tướng và các tiện ích như quay số may mắn, đổ xúc xắc, tung đồng xu tại TTVL." />
 
-    <!--<base href="/" />-->
-    <base href="ttvl.io.vn" />
+    <base href="/" />
 
     <script>
         window.__env = {
@@ -60,14 +59,19 @@
     <!-- Nhúng js và css của MudThemeLibrary -->
     <script src="_content/MudThemeLibrary/js/scripts.bundle.js?ttvl-version=1"></script>
 
-    <!-- Nhúng js và css của MudThemeLibrary -->
+    <!-- Cơ chế tự động chuyển page dựa vào 404 của Github -->
     <script>
         const redirectPath = sessionStorage.getItem('redirectPath');
         if (redirectPath) {
             sessionStorage.removeItem('redirectPath');
-            history.replaceState({}, '', redirectPath);
+
+            const base = location.pathname.split('/').slice(0, 3).join('/');
+            const relativePath = redirectPath.replace(base, '') || '/';
+
+            history.replaceState({}, '', relativePath);
         }
     </script>
+
 </body>
 
 </html>
