@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AppAdmin",
   "resources": {
-    "hash": "sha256-dvFseI8IOotOw18hflh40fZuHxpEoz2yeu6N8ZbQX/8=",
+    "hash": "sha256-4oo8Byl1oBY8uOVSmd3SOoie5roQqSA33s35zxi9Zbs=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,7 +18,7 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "AppAdmin.wasm": "sha256-h1T21+QPS0Mw51sTKlMlY5GecP+zIq5Qr9nRXFELwt0=",
+      "AppAdmin.wasm": "sha256-0BCxFclvCkEMaX2pmH1b29ZS6wfhky+zurX0vljrgmI=",
       "AppShare.wasm": "sha256-EK9zyPWEcIFbWdoBOIjpI2ZD41I9f1HSEDk4LBXXGSs=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",

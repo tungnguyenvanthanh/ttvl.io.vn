@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AppAdmin</title>
 
-    <base href="tungnguyenvanthanh.github.io" />
+    <!--<base href="/" />-->
+    <base href="/dashboard/xaydungmiendong/" />
 
     <script>
         window.__env = {
@@ -42,12 +43,17 @@
     <!-- Nhúng js và css của MudThemeLibrary -->
     <script src="_content/MudThemeLibrary/js/scripts.bundle.js?ttvl-version=1"></script>
 
-    <!-- redirect GitHub page -->
+    <!-- Cơ chế tự động chuyển page dựa vào 404 của Github -->
     <script>
         const redirectPath = sessionStorage.getItem('redirectPath');
         if (redirectPath) {
             sessionStorage.removeItem('redirectPath');
-            history.replaceState({}, '', redirectPath);
+
+            // Cắt bỏ phần prefix /dashboard/xaydungmiendong hoặc /dashboard/shoponline
+            const base = location.pathname.split('/').slice(0, 3).join('/');
+            const relativePath = redirectPath.replace(base, '') || '/';
+
+            history.replaceState({}, '', relativePath);
         }
     </script>
 </body>
