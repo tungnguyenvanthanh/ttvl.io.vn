@@ -62,13 +62,14 @@
     <!-- Cơ chế tự động chuyển page dựa vào 404 của Github -->
     <script>
         const redirectPath = sessionStorage.getItem('redirectPath');
-        if (redirectPath) {
+        const baseHref = document.querySelector('base')?.getAttribute('href') || '/';
+
+        if (redirectPath && redirectPath.startsWith(baseHref)) {
             sessionStorage.removeItem('redirectPath');
-
-            const base = location.pathname.split('/').slice(0, 3).join('/');
-            const relativePath = redirectPath.replace(base, '') || '/';
-
-            history.replaceState({}, '', relativePath);
+            history.replaceState({}, '', redirectPath);
+        } else if (redirectPath) {
+            sessionStorage.removeItem('redirectPath');
+            history.replaceState({}, '', baseHref);
         }
     </script>
 

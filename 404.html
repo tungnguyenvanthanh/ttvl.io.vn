@@ -1,27 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <!-- 404.html (đặt tại root của repo GitHub Pages) -->
-    <script type="text/javascript">
-        const path = location.pathname;
-        sessionStorage.setItem('redirectPath', path);
-
-        // Match sub-projects
-        const subApps = ['xaydungmiendong', 'shoponline'];
-        const match = path.match(/^\/dashboard\/([^\/]+)/);
-
-        if (match && subApps.includes(match[1])) {
-            const appRoot = `/dashboard/${match[1]}/`;
-            window.location.replace(appRoot);
-        } else {
-            // Không thuộc project nào thì về trang chủ
-            window.location.replace('/');
-        }
-    </script>
+    <meta charset="UTF-8" />
 </head>
 <body>
-    Redirecting...
+    <script type="text/javascript">
+        const path = location.pathname;
+
+        // Lấy base path nếu khớp với sub-project
+        const match = path.match(/^\/dashboard\/(xaydungmiendong|shoponline)/);
+        const subProject = match ? match[0] : '/';
+
+        // Lưu path gốc để sub-project xử lý điều hướng nội bộ
+        sessionStorage.setItem('redirectPath', path);
+
+        // Redirect về index.html của project chính hoặc sub-project
+        window.location.replace(subProject + '/');
+    </script>
 </body>
 </html>
