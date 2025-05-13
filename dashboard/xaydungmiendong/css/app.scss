@@ -52,3 +52,9 @@
 .swal2-timer-progress-bar {
     background: #003a88 !important;
 }
+
+@media (max-width: 600px) {
+    .mud-xs-table .mud-table-cell:before {
+        white-space: nowrap !important;
+    }
+}

@@ -8,7 +8,6 @@
 		// Lắng nghe sự kiện từ iframe
 		window.addEventListener("message", (event) => {
 			if (event.data?.type === 'editor-ready') {
-
 				if (editorIframeRef.contentWindow) {
 					editorIframeRef.contentWindow.postMessage({
 						type: 'init-editor'
