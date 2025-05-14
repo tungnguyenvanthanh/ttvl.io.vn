@@ -55,25 +55,12 @@
 		}
 	};
 
-	const renderPreview = async (htmlContent, iframePreviewRef, cssUrls) => {
+	const renderPreview = async (finalHtml, iframePreviewRef) => {
 		if (!iframePreviewRef) return;
 
 		const doc = iframePreviewRef.contentDocument || iframePreviewRef.contentWindow.document;
 		doc.open();
-
-		const links = cssUrls.map(url => `<link rel="stylesheet" href="${url}">`).join("\n");
-
-		doc.write(`
-			<html>
-				<head>
-					${links}
-					<style>body{padding: 15px;}</style>
-				</head>
-				<body>
-					${htmlContent}
-				</body>
-			</html>
-		`);
+		doc.write(finalHtml);
 		doc.close();
 	};
 
