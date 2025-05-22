@@ -37,6 +37,7 @@
 
         const editorInstance = window.CodeMirror.fromTextArea(textareaElement, {
             lineNumbers: true,
+            viewportMargin: Infinity,
             mode: mode || "htmlmixed",
             theme: "dracula"
         });

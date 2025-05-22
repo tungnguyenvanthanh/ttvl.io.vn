@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AppAdmin",
   "resources": {
-    "hash": "sha256-FmDsNOjvCqsnTFpIX1vZ8oT4S2n2zk2bc8ApI67JrxE=",
+    "hash": "sha256-AsannmgXJAkynR1/3EqOaOGALtFy98ll29FsNBQVff8=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,8 +18,8 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "AppAdmin.wasm": "sha256-6JvCpdXTNeiADjuogCXQZsXrI3gCn0JQccWi2t32Qdc=",
-      "AppShare.wasm": "sha256-9JtzbZUdtK4F9MAOiATS+ua3uFRhOqWLl4fsnMrZ7jk=",
+      "AppAdmin.wasm": "sha256-sNKGa7M1/8RNZWoCm0PbUr2C/pS0Gw+AWidUZInT95g=",
+      "AppShare.wasm": "sha256-bJh0r8CbrHBz7ofeh6IXPRmUS0S5t9EyFSSBc4mUfQ4=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Markdig.wasm": "sha256-feJcJW1CRxfpVP1n43l2bDWWRwwqXcN2FR6C3jJxRL4=",
@@ -58,9 +58,9 @@
       "Microsoft.JSInterop.wasm": "sha256-U8TDefViFg6sz+U/MPg7u+Lb3h4fha+wadmMEzsBVIY=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-aqyuCwf1Tsx4FU+9M7zG+jZJZH7d2KbP4hPdHZlKvHw=",
       "MudBlazor.Markdown.wasm": "sha256-UdbXvLM+gdQBVfx3fgC5L/A2gO2rnkC6VAu0nyT7HHo=",
-      "MudBlazor.wasm": "sha256-Kl06Frmv4P2zmJl+riefbiKq0cFnoKzukDky0AdQP2E=",
-      "MudThemeLibrary.wasm": "sha256-6dSwJdf7ibxz8lyZNbRNlrwHjpEbMEQhwMxP3tlWw5I=",
-      "ShareLibrary.wasm": "sha256-E/bji9sJfMyS8jesqpUjOW5A2bjAVf/E96z7EhIDyjo=",
+      "MudBlazor.wasm": "sha256-GYR9GLi9A4iaLADIFcgXB9JPL07PfiuplhOfNm8NOiQ=",
+      "MudThemeLibrary.wasm": "sha256-NuhPI4bHihsRle4y5IUikJutQZHE1qHqEi3OC44tx48=",
+      "ShareLibrary.wasm": "sha256-n/SQCZzm8b67tLvJYa9RMMM727lDJeo0LnNXxGd3Ajw=",
       "System.Collections.Concurrent.wasm": "sha256-J1OQni6brTmQgfSFbBlhXKiAixL2eHvPaLvWUsfdyDY=",
       "System.Collections.Immutable.wasm": "sha256-cNc6fxG2Pz+W8PcDm015u/Of9kv0Jsn8gImEbjT3BGM=",
       "System.Collections.NonGeneric.wasm": "sha256-WlGDm+MUUsEXzDiLY8QaRB60K338BrQzY1uBvHP7BQo=",
