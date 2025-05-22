@@ -1,7 +1,7 @@
 @import '_content/MudThemeLibrary/MudThemeLibrary.9ks67hod09.bundle.scp.css';
 
 /* /Components/AvatarRankComponent.razor.rz.scp.css */
-.avatar-rank[b-atyruh8res]{position:relative}[b-atyruh8res] .lottie-svg{position:absolute;width:300%;height:300%;top:-102%;left:-100%}
+.avatar-rank[b-atyruh8res]{position:relative}[b-atyruh8res] .lottie-svg{pointer-events:none;position:absolute;width:300%;height:300%;top:-102%;left:-100%}
 /* /Components/TitleComponent.razor.rz.scp.css */
 [b-i7hat9pwf3].title .title-content{padding-bottom:5px;position:relative;display:flex;align-items:center}[b-i7hat9pwf3].title .title-content::before,[b-i7hat9pwf3].title .title-content::after{content:"";position:absolute;left:0;background-color:var(--mud-palette-primary)}[b-i7hat9pwf3].title .title-content::before{bottom:0;height:5px;width:55px}[b-i7hat9pwf3].title .title-content::after{bottom:2px;height:1px;width:100%;max-width:75px}[b-i7hat9pwf3].title .title-content .title-icon{font-size:inherit}
 /* /Pages/Blog/BlogCategoryPage.razor.rz.scp.css */
