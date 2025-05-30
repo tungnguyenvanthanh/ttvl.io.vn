@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AppAdmin",
   "resources": {
-    "hash": "sha256-K307Ta177HKu6zDGGio4AM5jaPNaqBMYCFX/2Ty7aVE=",
+    "hash": "sha256-G2usOd7Y45C55MKzFahfqyKqvpK13/K9RgCwBWDBf94=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -101,7 +101,7 @@
       "System.Web.HttpUtility.wasm": "sha256-cK2u4Tpae2YzcDeuyqTofMUSoA3lceme5CSgDJoXizY=",
       "TimeZoneConverter.wasm": "sha256-cEgpCjAZqy4HvFK5Uqnua+XDUSlFdHZUGqMW9zUrnLc=",
       "TinyMCE.Blazor.wasm": "sha256-GP8+VJJNgYRrhBCGO4g8RhsLPRkoM6kHeR+ejWFnn8g=",
-      "TTVLMudThemeLibrary.wasm": "sha256-aoabKi802VcNbfL4oP6H+fzn9gD6xcDyUh9GlVHqX+g=",
+      "TTVLMudThemeLibrary.wasm": "sha256-nNb/+eepQxM5+YdqmHVmiN7JwKNMVxHu01+v68c+kO8=",
       "TTVLShareLibrary.wasm": "sha256-oihZ2haocqjvaMMs2W6vdHyCn7VGr6BKYmgzwwN4Y5g="
     },
     "libraryInitializers": {
