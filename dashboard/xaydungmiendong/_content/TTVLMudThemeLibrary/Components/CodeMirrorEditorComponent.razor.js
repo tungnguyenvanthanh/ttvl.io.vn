@@ -2,38 +2,34 @@
 
     const preload = async () => {
         // Nếu đã có Promise đang chạy hoặc đã load xong thì dùng lại
-        if (window.__codemirror_loaderPromise) return window.__codemirror_loaderPromise;
+        if (typeof window.CodeMirror === "function") return;
 
         // Tạo Promise duy nhất để mọi component đều chờ vào đây
-        window.__codemirror_loaderPromise = (async () => {
+         let codemirror_loaderPromise = (async () => {
             // Bước 1: Core
-            await loadAsset({ type: "js", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/codemirror.min.js", location: "body" });
+            await loadAsset({ type: "js", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/codemirror.min.js", location: "body" });
 
             // 🆕 Bước 2: Mode con (cần thiết cho htmlmixed)
-            await loadAsset({ type: "js", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/xml/xml.min.js", location: "body" });
-            await loadAsset({ type: "js", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/javascript/javascript.min.js", location: "body" });
-            await loadAsset({ type: "js", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/css/css.min.js", location: "body" });
+            await loadAsset({ type: "js", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/xml.min.js", location: "body" });
+            await loadAsset({ type: "js", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/javascript.min.js", location: "body" });
+            await loadAsset({ type: "js", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/css.min.js", location: "body" });
 
             // Bước 3: htmlmixed (phải sau khi xml/js/css)
-            await loadAsset({ type: "js", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/mode/htmlmixed/htmlmixed.min.js", location: "body" });
+            await loadAsset({ type: "js", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/htmlmixed.min.js", location: "body" });
 
             // Bước 4: CSS
-            await loadAsset({ type: "css", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/codemirror.min.css", location: "before" });
-            await loadAsset({ type: "css", url: "https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.15/theme/dracula.min.css", location: "before" });
+            await loadAsset({ type: "css", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/codemirror.min.css", location: "before" });
+            await loadAsset({ type: "css", url: "_content/TTVLMudThemeLibrary/plugins/codemirror/dracula.min.css", location: "before" });
         })();
 
-        return window.__codemirror_loaderPromise;
-    };
-
-    let waitCheck = async () => {
-        while (typeof window.CodeMirror === "undefined") {
-            await new Promise(resolve => setTimeout(resolve, 500));
-        }
+        return codemirror_loaderPromise;
     };
 
     const init = async (textareaElement, dotNetHelper, mode) => {
 
-        await waitCheck();
+        while (typeof window.CodeMirror !== "function") {
+            await new Promise(resolve => setTimeout(resolve, 200));
+        }
 
         const editorInstance = window.CodeMirror.fromTextArea(textareaElement, {
             lineNumbers: true,

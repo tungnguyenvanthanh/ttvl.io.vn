@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AppAdmin",
   "resources": {
-    "hash": "sha256-7vYhWmSr5gsts9YrS+q6Gr7se1ndT6nAJbcBsh/9nko=",
+    "hash": "sha256-zOxN/UIy77d/U2j9hHGKJBB8vl2pf0Rc/OWLRx3N3QI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,17 +18,17 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "AppAdmin.wasm": "sha256-0/wtp+G7JjdqUX5u2p54BA9wmz4kJV8ROlRhYJjM3E8=",
-      "AppShare.wasm": "sha256-lTygXrBt83NjmjdUYwYaX4GRCh6XPEt49fNwCTB30JU=",
+      "AppAdmin.wasm": "sha256-cYHyNXarC7sc6Efaqw40AEJ5aW0PoILGxXDmjwskGOs=",
+      "AppShare.wasm": "sha256-JuLept1IPUTISg4JTgp5JDX5TgzAMhhj71lhO7yQZu4=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Markdig.wasm": "sha256-feJcJW1CRxfpVP1n43l2bDWWRwwqXcN2FR6C3jJxRL4=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-Bi5Ett2LVjVBBT1Nek6WYgkogBjoZUVFbmasYngkJgQ=",
       "Microsoft.AspNetCore.Components.Authorization.wasm": "sha256-a3DNCRRbkbmfK7mqEPfC4HyNOYfXY8n5eTiD8RKa4Tk=",
       "Microsoft.AspNetCore.Components.Forms.wasm": "sha256-XMFMKd0WyLL7bP7Xxk2Sq3/MpcuHkh+K3412y246cVw=",
-      "Microsoft.AspNetCore.Components.wasm": "sha256-XmtTyQ9jGvLOYugqjNwB43scblsVEec9EbLJgEr3H50=",
-      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-iPsyoFsL5QAERay6SMn+EdkWhefjw0aqKK7R/dP5BUU=",
-      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-OmXXJBJs1C7n77Rs1IGYAp8OLiI2evp/wk18t6X4vAI=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-RnEaHagE7rb/8V9mdPpWBJXl31sk4hhqiJP7r7mUCnM=",
+      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-njWxhBWuSuTmUvmWuRcQSUhEkIkucI1ux9BaFBMdmxM=",
+      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-EFRjXDHeAh2rHrc8waOS+JFQQ2Ce6FrxcpiN/zkT0BE=",
       "Microsoft.AspNetCore.Connections.Abstractions.wasm": "sha256-kDiQZ/e85x74FZGzT7kpdh7bAl23dSOm6bRHTnCV1A8=",
       "Microsoft.AspNetCore.Http.Connections.Client.wasm": "sha256-shtWzJs6GcBEcqqlZkszb0g3iEQvw3G6ojXRlcW63UI=",
       "Microsoft.AspNetCore.Http.Connections.Common.wasm": "sha256-ItBxKqze3v6Y+WCvajUPP/C/btx7rlMY6UBFP16T3iI=",
@@ -101,10 +101,10 @@
       "System.Web.HttpUtility.wasm": "sha256-cK2u4Tpae2YzcDeuyqTofMUSoA3lceme5CSgDJoXizY=",
       "TimeZoneConverter.wasm": "sha256-cEgpCjAZqy4HvFK5Uqnua+XDUSlFdHZUGqMW9zUrnLc=",
       "TinyMCE.Blazor.wasm": "sha256-GP8+VJJNgYRrhBCGO4g8RhsLPRkoM6kHeR+ejWFnn8g=",
-      "TTVLMudThemeLibrary.wasm": "sha256-GpafWNNWuDJmt/e2H1RhXFlUbK7O5ptj/sUJTB5nPq4=",
-      "TTVLMudWebsiteService.wasm": "sha256-gEJbWoK4VALnmgrNC9Va/Ox6T9h/cO2ypTBhuO2eO74=",
-      "TTVLSharedInfrastructure.wasm": "sha256-90j9XXo8TdP62RtmwdxCPbGbWfiehAv//Vb2CrjnhP8=",
-      "TTVLShareLibrary.wasm": "sha256-EbHHpbGVDQm0maeD3rJ6oh/lqIjKtmv6DfCm2bCqI7Q="
+      "TTVLMudThemeLibrary.wasm": "sha256-J16L5ISI8r/IuO/V5+lWd/kDPFUqHB1VhTeDglnoYCM=",
+      "TTVLMudWebsiteService.wasm": "sha256-LD2lk4XCvKWJHolnWTWqa9ujGEtNsbDjn9uJySYX9K0=",
+      "TTVLSharedInfrastructure.wasm": "sha256-ASspIFxwvOSNWNRfqNDDUa+8cXIVRhkz8Ue6yAbYgSs=",
+      "TTVLShareLibrary.wasm": "sha256-ujXNrocy49RjW0qoglLFgQGERROnwgtVe2av9/aolCg="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="

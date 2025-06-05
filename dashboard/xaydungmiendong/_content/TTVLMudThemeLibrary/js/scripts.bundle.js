@@ -2,7 +2,6 @@
     { type: "css", url: "_content/TTVLMudThemeLibrary/css/app.css", location: "before" },
     { type: "js", url: "_content/MudBlazor/MudBlazor.min.js", location: "head" },
     { type: "js", url: "_content/MudBlazor.Markdown/MudBlazor.Markdown.min.js", location: "head" },
-    { type: "js", url: "_content/TTVLMudThemeLibrary/js/site.js", location: "body" },
     { type: "css", url: "_content/MudBlazor.Markdown/MudBlazor.Markdown.min.css", location: "before" },
     { type: "css", url: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap", location: "before" },
     { type: "css", url: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined", location: "before" },
@@ -14,6 +13,8 @@
     { type: "js", url: "_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js", location: "body" },
     { type: "js", url: "_content/TTVLMudThemeLibrary/js/jquery/jquery-ui.js", location: "head" },
     { type: "js", url: "_content/TTVLMudThemeLibrary/js/jquery/jquery.ui.touch-punch.min.js", location: "head" },
+    { type: "js", url: "_content/TTVLMudThemeLibrary/plugins/beautify/beautify-html.min.js", location: "body" },
+    { type: "js", url: "_content/TTVLMudThemeLibrary/js/site.js", location: "body" },
 ];
 
 async function loadAsset(asset) {
