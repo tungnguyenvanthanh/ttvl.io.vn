@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "AppAdmin",
   "resources": {
-    "hash": "sha256-N707yBnHWyn1VbD84uSVUVRLhL5NsA4tl+EzsCzZ54o=",
+    "hash": "sha256-/4UEUcuHBWXOskDmvsxdWI5EAZU547LNXtZwZFoJOSQ=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-ftpNqtARtVNE8ku5eB/jXoklb41UQ+EutUHfwmbNTBY="
     },
@@ -18,8 +18,8 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "AppAdmin.wasm": "sha256-cYHyNXarC7sc6Efaqw40AEJ5aW0PoILGxXDmjwskGOs=",
-      "AppShare.wasm": "sha256-JuLept1IPUTISg4JTgp5JDX5TgzAMhhj71lhO7yQZu4=",
+      "AppAdmin.wasm": "sha256-kGnIVEwzOUE3fQZriBlMYzvs8KyWORRV8XafZJJbaAg=",
+      "AppShare.wasm": "sha256-lTygXrBt83NjmjdUYwYaX4GRCh6XPEt49fNwCTB30JU=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "CurrieTechnologies.Razor.SweetAlert2.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Markdig.wasm": "sha256-feJcJW1CRxfpVP1n43l2bDWWRwwqXcN2FR6C3jJxRL4=",
@@ -101,10 +101,10 @@
       "System.Web.HttpUtility.wasm": "sha256-cK2u4Tpae2YzcDeuyqTofMUSoA3lceme5CSgDJoXizY=",
       "TimeZoneConverter.wasm": "sha256-cEgpCjAZqy4HvFK5Uqnua+XDUSlFdHZUGqMW9zUrnLc=",
       "TinyMCE.Blazor.wasm": "sha256-GP8+VJJNgYRrhBCGO4g8RhsLPRkoM6kHeR+ejWFnn8g=",
-      "TTVLMudThemeLibrary.wasm": "sha256-jNODnROkCULWaYPbUkS83KcdIl+vv/6GRZPqx/Wrgnw=",
-      "TTVLMudWebsiteService.wasm": "sha256-LD2lk4XCvKWJHolnWTWqa9ujGEtNsbDjn9uJySYX9K0=",
-      "TTVLSharedInfrastructure.wasm": "sha256-ASspIFxwvOSNWNRfqNDDUa+8cXIVRhkz8Ue6yAbYgSs=",
-      "TTVLShareLibrary.wasm": "sha256-ujXNrocy49RjW0qoglLFgQGERROnwgtVe2av9/aolCg="
+      "TTVLMudThemeLibrary.wasm": "sha256-xykiGHmM6wqVh/DDmL7BLsuPTCCe4fiF8bKVekTClVo=",
+      "TTVLMudWebsiteService.wasm": "sha256-CTw02nrcWFi5+2DFsLWcTlx8pJiCF+GZVxINwkJ/sbc=",
+      "TTVLSharedInfrastructure.wasm": "sha256-dYrxZecLQ+/SQtUp0SvLVnyxDOMjNE9B+k+6tNx8vAw=",
+      "TTVLShareLibrary.wasm": "sha256-EbHHpbGVDQm0maeD3rJ6oh/lqIjKtmv6DfCm2bCqI7Q="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
