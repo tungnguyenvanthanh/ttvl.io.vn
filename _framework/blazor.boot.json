@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-d03kYbIeK415+b5BHQacYYwv+WqI7wP9lx/agJKT5WE=",
+    "hash": "sha256-Jx2aJCK2F+xgy6fniX+f0H/FBW4jf/EZrsr+f7qzc3k=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -55,7 +55,7 @@
       "Microsoft.Extensions.Primitives.wasm": "sha256-SjzPoqgDM2Otp7dFsy+jWyx2dEYBLOugQ14hyJGgJ/U=",
       "Microsoft.JSInterop.wasm": "sha256-mp+JaWwm0OyVL9uw+VzB2XIEsoTTOYFukIWZSsjP6+E=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-a+efVLD7FPKFKpE1X2rFnlYPOwZToJnvjYU3hBSBB2Y=",
-      "MudBlazor.wasm": "sha256-9cwK0xcon57/L/R1PDykOUyV7ZtB6cKszaoSuRcG/5k=",
+      "MudBlazor.wasm": "sha256-gdrCIaGn+JFAMHe637jnCItuvHA7IcQRuRUAfVf58UA=",
       "MudBlazor.Markdown.wasm": "sha256-UdbXvLM+gdQBVfx3fgC5L/A2gO2rnkC6VAu0nyT7HHo=",
       "System.Diagnostics.DiagnosticSource.wasm": "sha256-NNsfh/iv7Gg04BslcK/6zZUx95Oa4wCrgqYXlj381AA=",
       "System.IO.Pipelines.wasm": "sha256-sP0Ouu08KfWVgmNUItyK0kc2e6ex1PG0BhexeJ5Wu7I=",
@@ -101,7 +101,7 @@
       "System.Private.CoreLib.wasm": "sha256-zrJgkWqccHI0ZGuc5FK4O8bQPCI1Q+tyn1OsY4uQ/Lo=",
       "TTVLMudThemeLibrary.wasm": "sha256-79CN9cRCMqQxcr9aHTo5uYG92yFdEORj8tEo+S6LZZY=",
       "TTVLShareLibrary.wasm": "sha256-4z3CcN0I+Be4CwMPTCX/k7uk7zBEAb36f76GWAAVH08=",
-      "TTVLWeb.Game.wasm": "sha256-PGj8EFyQjGQz1MpYoZ4PSowmn4aNC8hw0chCfdrxWhg="
+      "TTVLWeb.Game.wasm": "sha256-eO494ani8GK9tE5xv9OUdJkd5UvmxxDnszY0LHFZsbY="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
