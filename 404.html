@@ -5,17 +5,13 @@
 </head>
 <body>
     <script type="text/javascript">
-        const path = location.pathname;
+		const path = location.pathname;
 
-        // Lấy base path nếu khớp với sub-project
-        const match = path.match(/^\/dashboard\/(xaydungmiendong|shoponline)/);
-        const subProject = match ? match[0] : '/';
+		// Lưu path gốc để xử lý điều hướng sau
+		sessionStorage.setItem('redirectPath', path);
 
-        // Lưu path gốc để sub-project xử lý điều hướng nội bộ
-        sessionStorage.setItem('redirectPath', path);
-
-        // Redirect về index.html của project chính hoặc sub-project
-        window.location.replace(subProject === "/" ? "/" : subProject);
-    </script>
+		// Chuyển hướng về trang chủ (nếu cần)
+		window.location.replace('/');
+	</script>
 </body>
 </html>
