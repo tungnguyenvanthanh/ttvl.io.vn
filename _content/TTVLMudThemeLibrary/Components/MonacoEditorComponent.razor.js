@@ -2,7 +2,7 @@
     editors: {},
     ready: {},
 
-    initializeMonaco: function (divId, value, language, theme, dotNetHelper) {
+    initializeMonaco: function (divId, value, language, theme, readOnly, dotNetHelper) {
         if (typeof require === 'undefined') {
             console.error('⚠️ Monaco loader.js chưa được tải.');
             return;
@@ -24,7 +24,8 @@
                     value: value,
                     language: language,
                     theme: theme,
-                    automaticLayout: true
+                    automaticLayout: true,
+                    readOnly: readOnly
                 });
 
                 editor.onDidChangeModelContent(() => {
