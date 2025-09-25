@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-e2hBMQvIyw8PFriISKtCNh+yPTbZL0IIg+ael6KDUkA=",
+    "hash": "sha256-lr5lq5eNvLpy9OJvKnXGIKmKEbgTbvn3pSSvj81BJtI=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-YyxJV6dv935qHoQAmjB+2qRjHeGpm4SyWxE0T/KvsIE="
     },
@@ -99,9 +99,9 @@
       "System.Web.HttpUtility.wasm": "sha256-4yEIve5NJHIceQ7hzDDIhevg6b3OF7P0aP7yh3TjWoA=",
       "System.wasm": "sha256-ovI9fLxLRfh4RwNCi87t4luRVFfNap5GiBEwY0eh3bc=",
       "System.Private.CoreLib.wasm": "sha256-C+LmqRU1KgeCV6hfOGeA0UI7sVxpwb5NMyHE+9ZXiUM=",
-      "TTVLMudThemeLibrary.wasm": "sha256-PCYxcAbuMDB2W5BUzJDa8xsJsOWOw18idmYqWLmUq4Y=",
+      "TTVLMudThemeLibrary.wasm": "sha256-9crHXa8dUM39yEGa3IxXDQtwnog4zD8P4TzbRMcq/NA=",
       "TTVLShareLibrary.wasm": "sha256-ZiHTcYNpb0Ph3px2jqvTLgUvuEQLuTibZvVpZAy36DY=",
-      "TTVLWeb.Game.wasm": "sha256-5YS3SddhgSsgvX6+0ZQvvUkmH+H4k3l7PKZjN4Yt2IQ="
+      "TTVLWeb.Game.wasm": "sha256-YE4xmSl4K7wGfkYnimLIQ4X5u8dMJjyqIs6NEZXekl8="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="

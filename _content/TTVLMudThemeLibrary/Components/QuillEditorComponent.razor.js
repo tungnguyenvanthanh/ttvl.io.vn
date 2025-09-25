@@ -1,5 +1,5 @@
 ﻿export const QuillEditor = function () {
-    const init = (editorId, placeholder, initialContent, dotNetHelper) => {
+    const init = (editorId, placeholder, valueContent, dotNetHelper) => {
         const toolbarOptions = [
             ['bold', 'italic', 'underline', 'strike'],
             ['blockquote', 'code-block', 'link'],
@@ -21,8 +21,8 @@
             theme: "snow"
         });
 
-        if (initialContent) {
-            quill.root.innerHTML = initialContent;
+        if (valueContent) {
+            quill.root.innerHTML = valueContent;
         }
 
         quill.on("text-change", function () {
@@ -43,8 +43,16 @@
         return quill.getText().trim();
     }
 
+    const setValueContent = (editorId, valueContent) => {
+        const quill = window._quillEditors?.[editorId];
+        if (!quill) return;
+
+        quill.root.innerHTML = valueContent;
+    }
+
     return {
         init,
-        checkContentText
+        checkContentText,
+        setValueContent
     }
 }();
