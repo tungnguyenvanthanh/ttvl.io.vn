@@ -27,6 +27,7 @@
 
         quill.on("text-change", function () {
             const html = quill.root.innerHTML;
+
             dotNetHelper.invokeMethodAsync("OnContentChanged", html);
         });
 
@@ -50,9 +51,25 @@
         quill.root.innerHTML = valueContent;
     }
 
+    const getHtml = (editorId) => {
+        const quill = window._quillEditors?.[editorId];
+        if (!quill) return "";
+
+        return quill.root.innerHTML ?? "";
+    }
+
+    const getSemanticHtml = (editorId) => {
+        const quill = window._quillEditors?.[editorId];
+        if (!quill) return "";
+
+        return quill.getSemanticHTML() ?? "";
+    }
+
     return {
         init,
         checkContentText,
-        setValueContent
+        setValueContent,
+        getHtml,
+        getSemanticHtml
     }
 }();
