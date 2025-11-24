@@ -26,24 +26,33 @@
 
     <base href="/" />
 
+    <!-- Environment Config (SYNC - Required immediately) -->
     <script>
         window.__env = {
-            environment: "Production"  // "Development" Hoặc "Production"
+            environment: "Production"  // "Development" hoặc "Production"
         };
     </script>
 
-    <script src="_content/MudBlazor/MudBlazor.min.js"></script>
+    <!-- ========================================
+         CRITICAL CSS (Preload for fast render)
+         ======================================== -->
+    <link rel="preload" href="_content/MudBlazor/MudBlazor.min.css" as="style">
+    <link rel="preload" href="_content/TTVLDashboard.SharedLibrary/css/app.css" as="style">
 
-    <script src="_content/MudBlazor.Markdown/MudBlazor.Markdown.min.js"></script>
-    <link href="_content/MudBlazor.Markdown/MudBlazor.Markdown.min.css" rel="stylesheet" />
-
-    <script src="_content/TTVLMudThemeLibrary/js/jquery/jquery-3.7.1.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/js/jquery/jquery-ui.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/js/jquery/jquery.ui.touch-punch.min.js"></script>
-
-    <link href="https://cdn.jsdelivr.net/gh/tungnguyenvanthanh/assets-files/plugin/quill/quill.snow.css" rel="stylesheet" />
+    <!-- Core CSS -->
     <link href="_content/MudBlazor/MudBlazor.min.css" rel="stylesheet" />
-    <link href="_content/TTVLMudThemeLibrary/css/spacing.css?v=2" rel="stylesheet" />
+    <link href="_content/MudBlazor.Markdown/MudBlazor.Markdown.min.css" rel="stylesheet" />
+    
+    <!-- Application CSS -->
+    <link href="_content/TTVLDashboard.SharedLibrary/css/spacing.css?v=2" rel="stylesheet" />
+    <link href="_content/TTVLDashboard.SharedLibrary/css/animate.css" rel="stylesheet" />
+    <link href="_content/TTVLDashboard.SharedLibrary/css/hover.css" rel="stylesheet" />
+    <link href="_content/TTVLDashboard.SharedLibrary/css/app.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="TTVLWeb.Game.styles.css?v=2" rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link href="https://cdn.jsdelivr.net/gh/tungnguyenvanthanh/assets-files/plugin/quill/quill.snow.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
@@ -51,11 +60,19 @@
     <link href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" rel="stylesheet" />
     <link href="_content/MudBlazor.FontIcons.MaterialSymbols/css/font.min.css" rel="stylesheet" />
 
-    <link href="css/app.css" rel="stylesheet" />
-    <link href="_content/TTVLMudThemeLibrary/css/animate.css" rel="stylesheet" />
-    <link href="_content/TTVLMudThemeLibrary/css/hover.css" rel="stylesheet" />
-    <link href="_content/TTVLMudThemeLibrary/css/app.css" rel="stylesheet" />
-    <link href="TTVLWeb.Game.styles.css?v=2" rel="stylesheet" />
+    <!-- ========================================
+         CRITICAL SCRIPTS (Defer - Non-blocking)
+         ======================================== -->
+    
+    <!-- jQuery (Required by plugins) -->
+    <script src="_content/TTVLDashboard.SharedLibrary/js/jquery/jquery-3.7.1.js" defer></script>
+    <script src="_content/TTVLDashboard.SharedLibrary/js/jquery/jquery-ui.js" defer></script>
+    <script src="_content/TTVLDashboard.SharedLibrary/js/jquery/jquery.ui.touch-punch.min.js" defer></script>
+
+    <!-- MudBlazor -->
+    <script src="_content/MudBlazor/MudBlazor.min.js" defer></script>
+    <script src="_content/MudBlazor.Markdown/MudBlazor.Markdown.min.js" defer></script>
+
 </head>
 
 <body>
@@ -76,30 +93,72 @@
         <a class="dismiss">🗙</a>
     </div>
 
-    <!-- Nhúng js và css của TTVLMudThemeLibrary -->
-    <script src="https://cdn.jsdelivr.net/gh/tungnguyenvanthanh/assets-files/plugin/quill/quill.js"></script>
-    <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/plugins/lottie/lottie.min.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/plugins/beautify/beautify-html.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.min.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/Components/MonacoEditorComponent.razor.js"></script>
-    <script src="_content/TTVLMudThemeLibrary/js/site.js"></script>
+    <!-- ========================================
+         NON-CRITICAL SCRIPTS (Defer - Async load)
+         ======================================== -->
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.jsdelivr.net/gh/tungnguyenvanthanh/assets-files/plugin/quill/quill.js" defer></script>
+    <script src="_content/CurrieTechnologies.Razor.SweetAlert2/sweetAlert2.min.js" defer></script>
+    <script src="_content/TTVLDashboard.SharedLibrary/plugins/lottie/lottie.min.js" defer></script>
+    <script src="_content/TTVLDashboard.SharedLibrary/plugins/beautify/beautify-html.min.js" defer></script>
 
-    <script src="_framework/blazor.webassembly.js"></script>
-    <script src="js/site.js"></script>
+    <!-- Application Scripts (Load BEFORE Blazor) -->
+    <script src="_content/TTVLDashboard.SharedLibrary/js/site.js" defer></script>
+    <script src="js/site.js" defer></script>
 
-    <!-- Cơ chế tự động chuyển page dựa vào 404 của Github -->
+    <!-- Monaco Editor (Global loader) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.52.2/min/vs/loader.min.js" defer></script>
+
+    <!-- ========================================
+         BLAZOR FRAMEWORK (Autostart controlled)
+         ======================================== -->
+    <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+
+    <!-- ========================================
+         STARTUP ORCHESTRATION
+         ======================================== -->
     <script>
-        const redirectPath = sessionStorage.getItem('redirectPath');
-        const baseHref = document.querySelector('base')?.getAttribute('href') || '/';
+        (async function startApp() {
+            // Wait for critical dependencies
+            let attempts = 0;
+            const maxAttempts = 100; // 5 seconds max wait
 
-        if (redirectPath && redirectPath.startsWith(baseHref)) {
-            sessionStorage.removeItem('redirectPath');
-            history.replaceState({}, '', redirectPath);
-        } else if (redirectPath) {
-            sessionStorage.removeItem('redirectPath');
-            history.replaceState({}, '', baseHref);
-        }
+            while ((!window.jQuery || !window.TTVLLogger) && attempts < maxAttempts) {
+                await new Promise(resolve => setTimeout(resolve, 50));
+                attempts++;
+            }
+
+            //if (attempts >= maxAttempts) {
+            //    console.error('⚠️ Timeout waiting for dependencies. Starting Blazor anyway...');
+            //} else {
+            //    console.log('✅ Dependencies ready (jQuery, TTVLLogger)');
+            //}
+
+            // Start Blazor
+            try {
+                await Blazor.start();
+                console.log('✅ Blazor started successfully');
+            } catch (error) {
+                console.error('❌ Blazor startup failed:', error);
+            }
+        })();
+    </script>
+
+    <!-- GitHub Pages 404 redirect handler -->
+    <script>
+        (function handleRedirect() {
+            const redirectPath = sessionStorage.getItem('redirectPath');
+            const baseHref = document.querySelector('base')?.getAttribute('href') || '/';
+
+            if (redirectPath && redirectPath.startsWith(baseHref)) {
+                sessionStorage.removeItem('redirectPath');
+                history.replaceState({}, '', redirectPath);
+            } else if (redirectPath) {
+                sessionStorage.removeItem('redirectPath');
+                history.replaceState({}, '', baseHref);
+            }
+        })();
     </script>
 </body>
 
