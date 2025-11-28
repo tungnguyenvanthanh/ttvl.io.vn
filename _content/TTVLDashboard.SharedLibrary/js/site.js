@@ -129,10 +129,10 @@ window.TTVLDashboardSharedLibrary = function () {
         navigator.clipboard.writeText(element.innerText)
             .then(() => {
                 dotNetHelper.invokeMethodAsync('OnCopyText', element.innerText);
-                logger.success('Text copied to clipboard', 'TTVLDashboard.SharedLibrary');
+                logger.success('Văn bản đã được sao chép vào bảng tạm', 'TTVLDashboard.SharedLibrary');
             })
             .catch(err => {
-                logger.error('Failed to copy text', 'TTVLDashboard.SharedLibrary', err);
+                logger.error('Không thể sao chép văn bản', 'TTVLDashboard.SharedLibrary', err);
             });
     };
 
@@ -175,7 +175,7 @@ window.TTVLDashboardSharedLibrary = function () {
             code = "";
         }
         try {
-            const res = await fetch('https://server.ttvl.io.vn/api/format-code/csharp', {
+            const res = await fetch('https://cdn.ttvl.io.vn/api/format-code/csharp', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(code)
