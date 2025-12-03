@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-hTC7iO/eXXNHK/RmVDHA9y+F/GoMj2/oicrV+ejwe+I=",
+    "hash": "sha256-PNKh9v3YGcOW7gFsY5RbWDLO98xM8+Hrej8u7puGGfg=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "CurrieTechnologies.Razor.SweetAlert2.lvj7kgyo2r.wasm": "CurrieTechnologies.Razor.SweetAlert2.wasm",
@@ -35,7 +35,7 @@
       "Microsoft.Extensions.Localization.bvn14pws96.wasm": "Microsoft.Extensions.Localization.wasm",
       "Microsoft.Extensions.Localization.Abstractions.ixsppbtym0.wasm": "Microsoft.Extensions.Localization.Abstractions.wasm",
       "Microsoft.Extensions.Logging.d5759dgs08.wasm": "Microsoft.Extensions.Logging.wasm",
-      "Microsoft.Extensions.Logging.Abstractions.4d0h3vccyr.wasm": "Microsoft.Extensions.Logging.Abstractions.wasm",
+      "Microsoft.Extensions.Logging.Abstractions.32sdguicee.wasm": "Microsoft.Extensions.Logging.Abstractions.wasm",
       "Microsoft.Extensions.Options.cye6fgpn51.wasm": "Microsoft.Extensions.Options.wasm",
       "Microsoft.Extensions.Primitives.wdgxpgsqcr.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.0hi1zeigqe.wasm": "Microsoft.JSInterop.wasm",
@@ -102,9 +102,9 @@
       "System.Xml.XDocument.rq3uoqeade.wasm": "System.Xml.XDocument.wasm",
       "System.t4d4s3f398.wasm": "System.wasm",
       "System.Private.CoreLib.ly04mewdop.wasm": "System.Private.CoreLib.wasm",
-      "TTVLDashboard.SharedLibrary.o5wmvgtcwg.wasm": "TTVLDashboard.SharedLibrary.wasm",
+      "TTVLDashboard.SharedLibrary.qcsma4l845.wasm": "TTVLDashboard.SharedLibrary.wasm",
       "TTVLShareLibrary.gero3deurs.wasm": "TTVLShareLibrary.wasm",
-      "TTVLWeb.Game.5m6k3y1lvj.wasm": "TTVLWeb.Game.wasm",
+      "TTVLWeb.Game.ckugt6v8sc.wasm": "TTVLWeb.Game.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.noby4tlk4d.js": "dotnet.native.js",
       "dotnet.native.qe75a9vfqn.wasm": "dotnet.native.wasm",
@@ -164,7 +164,7 @@
       "Microsoft.Extensions.Localization.bvn14pws96.wasm": "sha256-6UgMJoVZBfDdfzYR0aKVK6BWArxpXC1qiQDDjiXw/L4=",
       "Microsoft.Extensions.Localization.Abstractions.ixsppbtym0.wasm": "sha256-tnMHqb6BpI1Jj9M9WNSAAJzzxHrQgov/aSXbFqc+xzk=",
       "Microsoft.Extensions.Logging.d5759dgs08.wasm": "sha256-cbD0gTzguX1Th+/5Z8fueACvOA2Fi3N3gAuQOyZMC2M=",
-      "Microsoft.Extensions.Logging.Abstractions.4d0h3vccyr.wasm": "sha256-GJtAaho4caxiVmfMPe8DyG4N93vV+6TZkmaDLE2sxoE=",
+      "Microsoft.Extensions.Logging.Abstractions.32sdguicee.wasm": "sha256-SzfDERAOQN9b+xK22dm4Jq9wd1aqDz15wYc5of+5P7g=",
       "Microsoft.Extensions.Options.cye6fgpn51.wasm": "sha256-zG93jidCj4vBcVrLdr3CRtyNM05ws3tdBGjyDTdb9jQ=",
       "Microsoft.Extensions.Primitives.wdgxpgsqcr.wasm": "sha256-zPXs1ZxaGv/gjScqkSbos0m3HyxJufpF3haxdyuT0QA=",
       "Microsoft.JSInterop.0hi1zeigqe.wasm": "sha256-PNEDV+xipLuvR317S6a9u1afGzemESKRb3t3u2Wajts=",
@@ -229,9 +229,9 @@
       "System.Xml.ReaderWriter.mtidk7trhm.wasm": "sha256-dr+sbTBA877XYK/jZngLiD22MYG5pB38qdu1JXk5Ifo=",
       "System.Xml.XDocument.rq3uoqeade.wasm": "sha256-jXHocYVCS/ThppEaX8pR/Ky4h/AvzicYqHMda1gq83I=",
       "System.t4d4s3f398.wasm": "sha256-fVP2BxRRKpBA0PmBbKxmO45bXDrAXVn1GthlDclLbeU=",
-      "TTVLDashboard.SharedLibrary.o5wmvgtcwg.wasm": "sha256-TNv0kdEJxc4G/yxai8OMrUhCBsFYbtOTT4Muw9wOFmY=",
+      "TTVLDashboard.SharedLibrary.qcsma4l845.wasm": "sha256-CmPBTkj+An8uRzPn9KJX4Wbd5Zasczs8xRN2P4YBgtg=",
       "TTVLShareLibrary.gero3deurs.wasm": "sha256-SMjt2q6ST7PVR3ogmCDu9kCvkpV9LjZwocJdUEPtAoU=",
-      "TTVLWeb.Game.5m6k3y1lvj.wasm": "sha256-g6Yl5v0rIOfQnKWTl1cvvckcl0+x5ZHs7zBEveabJkw="
+      "TTVLWeb.Game.ckugt6v8sc.wasm": "sha256-vAM0NHkehv5Igp0aD0lKnRnGIK/wVdiNCVwnQ06yFMk="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
