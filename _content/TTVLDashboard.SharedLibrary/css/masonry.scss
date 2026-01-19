@@ -123,10 +123,10 @@ $masonry-column-gap: 16px;
       .break-avoid-md-4
       .break-auto-lg-3
    ------------------------------------------------------------ */
+
+/* 3a) Base classes (không breakpoint) */
 @each $kw in $break-inside-keywords {
     @for $i from 1 through $max-columns {
-
-        /* Base: không breakpoint */
         .break-#{$kw}-#{$i} {
             column-count: $i;
             column-gap: $masonry-column-gap;
@@ -137,9 +137,13 @@ $masonry-column-gap: 16px;
                 page-break-inside: #{$kw};
             }
         }
+    }
+}
 
-        /* Theo breakpoint */
-        @each $bp, $val in $breakpoints {
+/* 3b) Responsive classes (theo breakpoint) */
+@each $bp, $val in $breakpoints {
+    @each $kw in $break-inside-keywords {
+        @for $i from 1 through $max-columns {
             @include bp-min($bp) {
                 .break-#{$kw}-#{$bp}-#{$i} {
                     column-count: $i;
