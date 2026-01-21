@@ -1,13 +1,13 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-ilkIa/iLWPrxFwN/X/Wi/TB5Lx0sc2GVeWnlPCEKRlI=",
+    "hash": "sha256-/+QhQ491IAgCef+xBZl4bNi1zZCl4Y56frUlJ+xEl5E=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "CurrieTechnologies.Razor.SweetAlert2.lvj7kgyo2r.wasm": "CurrieTechnologies.Razor.SweetAlert2.wasm",
       "Markdig.hc946gumly.wasm": "Markdig.wasm",
       "Microsoft.AspNetCore.Authorization.cfbh8icicc.wasm": "Microsoft.AspNetCore.Authorization.wasm",
-      "Microsoft.AspNetCore.Components.pwgjtdld3p.wasm": "Microsoft.AspNetCore.Components.wasm",
+      "Microsoft.AspNetCore.Components.6a500y5mh6.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Authorization.8idgsl1q3y.wasm": "Microsoft.AspNetCore.Components.Authorization.wasm",
       "Microsoft.AspNetCore.Components.Forms.tro8u9xo1t.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.Web.s1zmnh0yxg.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -40,7 +40,7 @@
       "Microsoft.Extensions.Primitives.wdgxpgsqcr.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.0hi1zeigqe.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
-      "MudBlazor.wkd8eybzbc.wasm": "MudBlazor.wasm",
+      "MudBlazor.jr466m7crt.wasm": "MudBlazor.wasm",
       "MudBlazor.Markdown.4m136gm5xx.wasm": "MudBlazor.Markdown.wasm",
       "Newtonsoft.Json.jcjjiqe038.wasm": "Newtonsoft.Json.wasm",
       "System.Net.ServerSentEvents.nnx0l54pbx.wasm": "System.Net.ServerSentEvents.wasm",
@@ -101,11 +101,11 @@
       "System.Xml.ReaderWriter.mtidk7trhm.wasm": "System.Xml.ReaderWriter.wasm",
       "System.Xml.XDocument.rq3uoqeade.wasm": "System.Xml.XDocument.wasm",
       "System.t4d4s3f398.wasm": "System.wasm",
-      "System.Private.CoreLib.k41djacr10.wasm": "System.Private.CoreLib.wasm",
-      "TTVLDashboard.CalendarLibrary.v5jdb9ls1w.wasm": "TTVLDashboard.CalendarLibrary.wasm",
-      "TTVLDashboard.SharedLibrary.uvmnhqjxtw.wasm": "TTVLDashboard.SharedLibrary.wasm",
-      "TTVLShareLibrary.pjvknv64gp.wasm": "TTVLShareLibrary.wasm",
-      "TTVLWeb.Game.j2wnd1m6u9.wasm": "TTVLWeb.Game.wasm",
+      "System.Private.CoreLib.6w0dxgq72c.wasm": "System.Private.CoreLib.wasm",
+      "TTVLDashboard.CalendarLibrary.i9v07lj0hb.wasm": "TTVLDashboard.CalendarLibrary.wasm",
+      "TTVLDashboard.SharedLibrary.dosxg49hzo.wasm": "TTVLDashboard.SharedLibrary.wasm",
+      "TTVLShareLibrary.iw1le5gjmk.wasm": "TTVLShareLibrary.wasm",
+      "TTVLWeb.Game.wr2kvr3kvb.wasm": "TTVLWeb.Game.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.noby4tlk4d.js": "dotnet.native.js",
       "dotnet.native.qe75a9vfqn.wasm": "dotnet.native.wasm",
@@ -130,14 +130,14 @@
     },
     "coreAssembly": {
       "System.Runtime.InteropServices.JavaScript.7u81f8olp1.wasm": "sha256-/zEYK1VQFpcGHE49otyHuuLSnHHmI8k4PJBBu8zEx3g=",
-      "System.Private.CoreLib.k41djacr10.wasm": "sha256-9CHhcp/m72VkBiah0NJ48FTdmabm9FtQWzkCtPVrCfk="
+      "System.Private.CoreLib.6w0dxgq72c.wasm": "sha256-xqauFCHQWS0tywug9oyjsT6+bxcTt3vdGusz0wctq9E="
     },
     "assembly": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
       "CurrieTechnologies.Razor.SweetAlert2.lvj7kgyo2r.wasm": "sha256-n6ubE26hJennNg6Gc9pr3BUMAuIS7CU4C94k2cw++m8=",
       "Markdig.hc946gumly.wasm": "sha256-r5H+rUlGPpjyNTjRl9sPHtsy0fxPqCRow0c5r+XtBk8=",
       "Microsoft.AspNetCore.Authorization.cfbh8icicc.wasm": "sha256-GCSqZwcBw9c7YXdSM7PRVrO3kuNh04sDm+qACbYyDC4=",
-      "Microsoft.AspNetCore.Components.pwgjtdld3p.wasm": "sha256-pwKUQ/N4UoigWgP+zL/3ROFrM5tlLn1oX2TfSpy4QcE=",
+      "Microsoft.AspNetCore.Components.6a500y5mh6.wasm": "sha256-Qk0oj+fCwtrdCeMl3NcghxKGypnbyzFVAzw1H+FPSA0=",
       "Microsoft.AspNetCore.Components.Authorization.8idgsl1q3y.wasm": "sha256-YEgltVhc+KdEEFJHVpA9zk0Nl5PNX9mJXGYRxBw9b1E=",
       "Microsoft.AspNetCore.Components.Forms.tro8u9xo1t.wasm": "sha256-aeHCyXxlKCRipIpX+xQN/AGNvM2pB5PEUoy7AUwuTuQ=",
       "Microsoft.AspNetCore.Components.Web.s1zmnh0yxg.wasm": "sha256-EMoX04086qneFO5ZWSAq5bn9SeerDr3Z2FK/WT6ihFk=",
@@ -170,7 +170,7 @@
       "Microsoft.Extensions.Primitives.wdgxpgsqcr.wasm": "sha256-zPXs1ZxaGv/gjScqkSbos0m3HyxJufpF3haxdyuT0QA=",
       "Microsoft.JSInterop.0hi1zeigqe.wasm": "sha256-PNEDV+xipLuvR317S6a9u1afGzemESKRb3t3u2Wajts=",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "sha256-sGms9Oai1ztzgfMsqBvmeKwa5ZyGWr/AEXr6thw0lso=",
-      "MudBlazor.wkd8eybzbc.wasm": "sha256-wPxZrF/coAJ6O4E/KRleLeohUUR6NHeKiwJ81iEwL/g=",
+      "MudBlazor.jr466m7crt.wasm": "sha256-n6s71p+oshYynx7O3ygDInGGYchFgv2gbsRkosQmoOc=",
       "MudBlazor.Markdown.4m136gm5xx.wasm": "sha256-7NANmYGWTTJ6lIt2/od9Pn7ibuKfJr9JkzgsRkHasqQ=",
       "Newtonsoft.Json.jcjjiqe038.wasm": "sha256-s8KVuknfxWl1cuDvQM/OnpBfnpM1rxzvzq21S1cF36U=",
       "System.Net.ServerSentEvents.nnx0l54pbx.wasm": "sha256-Y5OPE7A432suqRFQw6G/olPAphcD5/uOswnfRZ9tqLw=",
@@ -230,10 +230,10 @@
       "System.Xml.ReaderWriter.mtidk7trhm.wasm": "sha256-dr+sbTBA877XYK/jZngLiD22MYG5pB38qdu1JXk5Ifo=",
       "System.Xml.XDocument.rq3uoqeade.wasm": "sha256-jXHocYVCS/ThppEaX8pR/Ky4h/AvzicYqHMda1gq83I=",
       "System.t4d4s3f398.wasm": "sha256-fVP2BxRRKpBA0PmBbKxmO45bXDrAXVn1GthlDclLbeU=",
-      "TTVLDashboard.CalendarLibrary.v5jdb9ls1w.wasm": "sha256-vV7wkTxFcy6bCM1lVJrNqrymxn7q0EPRCur6lsKVglE=",
-      "TTVLDashboard.SharedLibrary.uvmnhqjxtw.wasm": "sha256-mpwazGV1QU8KN9bNWKDzKtTOWnMzw9R255JB1k+wysQ=",
-      "TTVLShareLibrary.pjvknv64gp.wasm": "sha256-S3BCgIK04ELDsHIKsWy85nEeca+HiYqv2R3r/fbtGc4=",
-      "TTVLWeb.Game.j2wnd1m6u9.wasm": "sha256-G7PrhLPJv0sqURikB+5RZAvdhWysxbzDhtn1AKQK864="
+      "TTVLDashboard.CalendarLibrary.i9v07lj0hb.wasm": "sha256-Rql+FNLdlId0MyVylLu8+5d8PEFDbX6eXKD8uhBuYeI=",
+      "TTVLDashboard.SharedLibrary.dosxg49hzo.wasm": "sha256-k4CGVasuaYSEs4QUaJHhYGt6I4FlRmc93LjyFH3X1zg=",
+      "TTVLShareLibrary.iw1le5gjmk.wasm": "sha256-4r4w3CojpK9AVsgwYdaAl09eVLfOHWoNdznv3b2UnNs=",
+      "TTVLWeb.Game.wr2kvr3kvb.wasm": "sha256-9Lny/YwY3GrE6l80qUenKY3j3vPS1pY8DC9q9T0I1No="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
