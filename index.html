@@ -5,8 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <component type="typeof(Microsoft.AspNetCore.Components.Web.HeadOutlet)"
-               render-mode="WebAssembly" />
+    <component type="typeof(Microsoft.AspNetCore.Components.Web.HeadOutlet)" render-mode="WebAssembly" />
 
     <base href="/" />
 
@@ -112,12 +111,6 @@
                 await new Promise(resolve => setTimeout(resolve, 50));
                 attempts++;
             }
-
-            //if (attempts >= maxAttempts) {
-            //    console.error('⚠️ Timeout waiting for dependencies. Starting Blazor anyway...');
-            //} else {
-            //    console.log('✅ Dependencies ready (jQuery, TTVLLogger)');
-            //}
 
             // Start Blazor
             try {
