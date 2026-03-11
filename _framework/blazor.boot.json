@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-IrstJJAJ/M22Dk6cTJPlDDAxvDmBd8G/zU/g1gu7LKU=",
+    "hash": "sha256-sIMjm62pOdAQVv4rSvIUCQQSW2CC4uE5IbQnfVUmUMI=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "CurrieTechnologies.Razor.SweetAlert2.lvj7kgyo2r.wasm": "CurrieTechnologies.Razor.SweetAlert2.wasm",
@@ -44,7 +44,7 @@
       "MudBlazor.6u6r94d8p0.wasm": "MudBlazor.wasm",
       "MudBlazor.Markdown.4m136gm5xx.wasm": "MudBlazor.Markdown.wasm",
       "Newtonsoft.Json.jcjjiqe038.wasm": "Newtonsoft.Json.wasm",
-      "NodaTime.1a73fdmlj0.wasm": "NodaTime.wasm",
+      "NodaTime.nqaqt3vwyv.wasm": "NodaTime.wasm",
       "System.Net.ServerSentEvents.nnx0l54pbx.wasm": "System.Net.ServerSentEvents.wasm",
       "TimeZoneConverter.gpao39u6us.wasm": "TimeZoneConverter.wasm",
       "TinyMCE.Blazor.w2jy6xgyg6.wasm": "TinyMCE.Blazor.wasm",
@@ -104,10 +104,10 @@
       "System.Xml.XDocument.w1e2ro3sqe.wasm": "System.Xml.XDocument.wasm",
       "System.7mkjnfwul0.wasm": "System.wasm",
       "System.Private.CoreLib.ad9jgp2jgq.wasm": "System.Private.CoreLib.wasm",
-      "TTVLDashboard.CalendarLibrary.6ssyg4f3fx.wasm": "TTVLDashboard.CalendarLibrary.wasm",
-      "TTVLDashboard.SharedLibrary.mieug6ncs7.wasm": "TTVLDashboard.SharedLibrary.wasm",
-      "TTVLShareLibrary.mwaftkk8r8.wasm": "TTVLShareLibrary.wasm",
-      "TTVLWeb.Game.lt957rgec0.wasm": "TTVLWeb.Game.wasm",
+      "TTVLDashboard.CalendarLibrary.l8gik6lbgh.wasm": "TTVLDashboard.CalendarLibrary.wasm",
+      "TTVLDashboard.SharedLibrary.rvkfbzu1it.wasm": "TTVLDashboard.SharedLibrary.wasm",
+      "TTVLShareLibrary.ihep1lf2xy.wasm": "TTVLShareLibrary.wasm",
+      "TTVLWeb.Game.8cjvv3hc1o.wasm": "TTVLWeb.Game.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.xidrk0eo52.js": "dotnet.native.js",
       "dotnet.native.y68cfu4kuf.wasm": "dotnet.native.wasm",
@@ -176,7 +176,7 @@
       "MudBlazor.6u6r94d8p0.wasm": "sha256-opus3QvQpoba1SrT1Rt2niikdHAG/D868NjSsnmeqNY=",
       "MudBlazor.Markdown.4m136gm5xx.wasm": "sha256-7NANmYGWTTJ6lIt2/od9Pn7ibuKfJr9JkzgsRkHasqQ=",
       "Newtonsoft.Json.jcjjiqe038.wasm": "sha256-s8KVuknfxWl1cuDvQM/OnpBfnpM1rxzvzq21S1cF36U=",
-      "NodaTime.1a73fdmlj0.wasm": "sha256-maq2+2akykxR0iQMzn23xmizLiGhvi1wwOfVi6yqC9k=",
+      "NodaTime.nqaqt3vwyv.wasm": "sha256-39HydYDp3jcrQXP93Z01k93WBdEJAqY4z2LGynXZ4zQ=",
       "System.Net.ServerSentEvents.nnx0l54pbx.wasm": "sha256-Y5OPE7A432suqRFQw6G/olPAphcD5/uOswnfRZ9tqLw=",
       "TimeZoneConverter.gpao39u6us.wasm": "sha256-zKwafr0zIwm7OrF1w2R8IO7TvPvQpDFf1UDiJfBACJQ=",
       "TinyMCE.Blazor.w2jy6xgyg6.wasm": "sha256-GP8+VJJNgYRrhBCGO4g8RhsLPRkoM6kHeR+ejWFnn8g=",
@@ -234,10 +234,10 @@
       "System.Xml.ReaderWriter.cz11zi1g4g.wasm": "sha256-SFuYzzUfXywFlfkAtv/SbxKQ4nYITrv8XYYNjdc29A0=",
       "System.Xml.XDocument.w1e2ro3sqe.wasm": "sha256-XMEcQLsUpfSzWOJuNHUab8gGTmhq66SgrQCTp3KjDeA=",
       "System.7mkjnfwul0.wasm": "sha256-H4K9w0OHWwZCaMDfVwQjW0dSqnnS/iuCkysBB+Q2c3A=",
-      "TTVLDashboard.CalendarLibrary.6ssyg4f3fx.wasm": "sha256-yukiy8WVUHO0I24ENXnftfrrtqOS0Yk1B4xem/Xl/Aw=",
-      "TTVLDashboard.SharedLibrary.mieug6ncs7.wasm": "sha256-AgNz1jw5+melQcqfeRnjdV7snmU74L7TlLZTjktfYuI=",
-      "TTVLShareLibrary.mwaftkk8r8.wasm": "sha256-Cs6uy0+NZgb/Mq8uQeU7T+I56tEZeA++Q3MTi981sBA=",
-      "TTVLWeb.Game.lt957rgec0.wasm": "sha256-+fMa1Q3CaD4SIAY1MssbZOzTsWBNnonQlxGXLCMVCBI="
+      "TTVLDashboard.CalendarLibrary.l8gik6lbgh.wasm": "sha256-tZ66ZzCyIrN2lnJk2Ls74E3wL4iFip1AJwFNKm9vqJg=",
+      "TTVLDashboard.SharedLibrary.rvkfbzu1it.wasm": "sha256-d46xwuZtk8R1hzEyMLYfiH1X2FhTA4gVovTCMo3+l3A=",
+      "TTVLShareLibrary.ihep1lf2xy.wasm": "sha256-amVtYUN+hhi/dn2x4hx+JcD4j3ZyL4D6NwUPg0/ASGg=",
+      "TTVLWeb.Game.8cjvv3hc1o.wasm": "sha256-WBHzWbdZ+eWrp0u5gJLx4Y0WZ+LYjwWWzdZBkiyuWD4="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
@@ -250,8 +250,8 @@
   "debugLevel": 0,
   "linkerEnabled": true,
   "appsettings": [
-    "../appsettings.json",
-    "../appsettings.Development.json"
+    "../appsettings.Development.json",
+    "../appsettings.json"
   ],
   "globalizationMode": "sharded",
   "extensions": {
