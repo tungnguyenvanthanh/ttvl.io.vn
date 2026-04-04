@@ -1,0 +1,66 @@
+﻿.swal2-container {
+    z-index: 9999 !important;
+}
+
+blockquote {
+    margin: 0 auto;
+    padding: 1em;
+    border-left: 5px solid var(--mud-palette-primary);
+
+    &:before {
+        display: none;
+    }
+
+    &:not(:first-of-type) {
+        margin-top: .5em;
+    }
+
+    footer {
+        margin-top: .5em;
+        padding: 0;
+
+        &:before {
+            content: '? ';
+        }
+    }
+}
+
+/* Giảm index của appbar xuống để không bị đè lên TinyMCE.Blazor.Editor khi bật chức năng full màn hình */ 
+.mud-appbar{
+    z-index: 1000 !important;
+}
+
+//Giao diện table
+.category-node,
+//Giao diện trên select
+.select-option {
+    position: relative;
+    padding-left: 1.25rem; /* khoảng cách từ trái vào */
+    margin-left: calc(var(--level) * 1.25rem); /* canh lề theo cấp */
+    /* Đường dọc │ */
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0.25rem;
+        width: 1px;
+        background-color: #c4c4c4;
+    }
+    /* Đường ngang ─ */
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0.9em;
+        left: 0.25rem;
+        width: 1rem;
+        height: 1px;
+        background-color: #c4c4c4;
+    }
+    /* Nếu là node cuối thì đường dọc chỉ kéo đến giữa dòng */
+    &.last {
+        &::before {
+            height: 0.9em;
+        }
+    }
+}

@@ -100,7 +100,6 @@ $gradient-themes: ( "purple": ( "start": #667eea, "end": #764ba2, "text": #fffff
     // Variant: Border gradient (chỉ viền, không fill)
     .border-gradient-#{$name} {
         border: 2px solid transparent;
-        background-image: linear-gradient(white, white), linear-gradient($angle, $start 0%, $end 100%);
         background-origin: border-box;
         background-clip: padding-box, border-box;
     }

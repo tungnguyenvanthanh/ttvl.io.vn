@@ -1,0 +1,606 @@
+﻿// ============================================================
+// SPACING.SCSS - THƯ VIỆN UTILITY CLASSES TỔNG HỢP
+// ============================================================
+// File này chứa các utility classes tùy chỉnh cho toàn bộ solution
+// Bao gồm: spacing, typography, colors, transforms, tables, animations
+// ============================================================
+
+// ------------------------------------------------------------
+// BIẾN CẤU HÌNH
+// ------------------------------------------------------------
+
+// Offset scale: 0..20 (4px step) => 0, 4px, 8px, ... 80px
+$offset-max: 20;
+$offset-step: 4px;
+
+// Danh sách kích thước viewport cho width/height utilities
+$viewport-sizes: (10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 80, 85, 90, 95, 100, 150, 200, 250, 300, 400, auto);
+
+// Breakpoints responsive theo chuẩn Material Design
+$breakpoints: ( xs: 0px, sm: 600px, md: 960px, lg: 1280px, xl: 1920px, xxl: 2560px );
+
+// Danh sách góc xoay cho transform utilities
+$rotations: (0, 45, 90, 180, 360);
+
+// Danh sách flip transforms
+$flips: ( "horizontal": scaleX(-1), "vertical": scaleY(-1), "both": scale(-1, -1) );
+
+// ------------------------------------------------------------
+// MÀU SẮC - BOOTSTRAP 5.3 COMPATIBLE
+// ------------------------------------------------------------
+
+// Bảng màu cơ bản theo Bootstrap 5.3
+$theme-colors: ( "primary": #0d6efd, "secondary": #6c757d, "success": #198754, "danger": #dc3545, "warning": #ffc107, "info": #0dcaf0, "light": #f8f9fa, "dark": #212529, "white": #ffffff, "black": #000000, "muted": #6c757d, "body": #212529 );
+
+// Màu text tương ứng cho các background (đảm bảo độ tương phản tốt)
+$theme-text-colors: ( "primary": #ffffff, "secondary": #ffffff, "success": #ffffff, "danger": #ffffff, "warning": #000000, "info": #000000, "light": #000000, "dark": #ffffff, "white": #000000, "black": #ffffff, "muted": #ffffff, "body": #ffffff );
+
+// Tạo text color utilities (.text-primary, .text-secondary, ...)
+@each $name, $color in $theme-colors {
+    .text-#{$name} {
+        color: $color !important;
+    }
+}
+
+// Tạo background color utilities với màu text tương phản
+// (.bg-primary, .bg-secondary, ...)
+@each $name, $bg-color in $theme-colors {
+    .bg-#{$name} {
+        background-color: $bg-color !important;
+        // Tự động set màu text tương phản để nội dung nổi bật
+        @if map-has-key($theme-text-colors, $name) {
+            color: map-get($theme-text-colors, $name) !important;
+        }
+    }
+}
+
+// Background gradient utilities
+.bg-gradient {
+    background-image: var(--bs-gradient) !important;
+}
+
+// Background opacity utilities (Bootstrap 5.3)
+@each $name, $color in $theme-colors {
+    @for $i from 1 through 9 {
+        $opacity: calc($i * 0.1);
+
+        .bg-#{$name}-subtle-#{$i} {
+            background-color: rgba($color, $opacity) !important;
+        }
+    }
+}
+
+// Border color utilities
+@each $name, $color in $theme-colors {
+    .border-#{$name} {
+        border-color: $color !important;
+    }
+}
+
+// ------------------------------------------------------------
+// WIDTH & HEIGHT UTILITIES
+// ------------------------------------------------------------
+
+// Tạo các class width/height với %, px, vh
+@each $size in $viewport-sizes {
+    // Width percentage (.w-10, .w-25, .w-100, ...)
+    .w-#{$size} {
+        width: #{$size + if($size == auto, "", "%")} !important;
+    }
+
+    // Width pixels (.w-10-px, .w-25-px, ...)
+    .w-#{$size}-px {
+        width: #{$size + if($size == auto, "", "px")} !important;
+    }
+
+    // Max-width percentage (.mw-10, .mw-25, ...)
+    .mw-#{$size} {
+        max-width: #{$size + if($size == auto, "", "%")} !important;
+    }
+
+    // Max-width pixels (.mw-10-px, .mw-25-px, ...)
+    .mw-#{$size}-px {
+        max-width: #{$size + if($size == auto, "", "px")} !important;
+    }
+
+    // Height percentage (.h-10, .h-25, .h-100, ...)
+    .h-#{$size} {
+        height: #{$size + if($size == auto, "", "%")} !important;
+    }
+
+    // Height pixels (.h-10-px, .h-25-px, ...)
+    .h-#{$size}-px {
+        height: #{$size + if($size == auto, "", "px")} !important;
+    }
+
+    // Max-height percentage (.mh-10, .mh-25, ...)
+    .mh-#{$size} {
+        max-height: #{$size + if($size == auto, "", "%")} !important;
+    }
+
+    // Min-height viewport (.min-vh-10, .min-vh-100, ...)
+    .min-vh-#{$size} {
+        min-height: #{$size + if($size == auto, "", "vh")} !important;
+    }
+
+    // Height viewport (.vh-10, .vh-100, ...)
+    .vh-#{$size} {
+        height: #{$size + if($size == auto, "", "vh")} !important;
+    }
+
+    // Min-height percentage (.min-h-10, .min-h-25, ...)
+    .min-h-#{$size} {
+        min-height: #{$size + if($size == auto, "", "%")} !important;
+    }
+}
+
+// ------------------------------------------------------------
+// RESPONSIVE WIDTH UTILITIES
+// ------------------------------------------------------------
+
+// Width responsive theo breakpoints (.w-sm-50, .w-md-100, ...)
+@each $breakpoint, $min-width in $breakpoints {
+    @media (min-width: #{$min-width}) {
+        @each $size in $viewport-sizes {
+            .w-#{$breakpoint}-#{$size} {
+                width: #{$size + if($size == auto, "", "%")} !important;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// TEXT ALIGNMENT UTILITIES
+// ------------------------------------------------------------
+
+// Text align utilities (.text-left, .text-center, .text-right, ...)
+@each $align in (left, center, right, justify, start, end) {
+    .text-#{$align} {
+        text-align: $align !important;
+    }
+}
+
+// ------------------------------------------------------------
+// FONT SIZE UTILITIES
+// ------------------------------------------------------------
+
+// Font size với keyword CSS (.font-size-small, .font-size-large, ...)
+@each $keyword in (small, medium, large, x-small, x-large, xx-large) {
+    .font-size-#{$keyword} {
+        font-size: $keyword !important;
+    }
+}
+
+// Font size utilities using rem scale (1..10)
+// Tạo lớp .font-size-1 .. .font-size-10 nhưng responsive tự động (desktop-first):
+// - Mặc định (lớn nhất) = N rem
+// - Các media queries giảm dần trên màn hình nhỏ hơn
+@for $i from 1 through 10 {
+    // Default: largest screens
+    .font-size-#{$i} {
+        font-size: #{$i}rem !important;
+    }
+
+    // <= xxl-1 (<= 2559px) -> slightly smaller (xl)
+    @media (max-width: 2559px) {
+        .font-size-#{$i} {
+            font-size: #{($i * 0.9)}rem !important;
+        }
+    }
+
+    // <= xl-1 (<= 1919px) -> lg
+    @media (max-width: 1919px) {
+        .font-size-#{$i} {
+            font-size: #{($i * 0.8)}rem !important;
+        }
+    }
+
+    // <= lg-1 (<= 1279px) -> md
+    @media (max-width: 1279px) {
+        .font-size-#{$i} {
+            font-size: #{($i * 0.7)}rem !important;
+        }
+    }
+
+    // <= md-1 (<= 959px) -> sm
+    @media (max-width: 959px) {
+        .font-size-#{$i} {
+            font-size: #{($i * 0.6)}rem !important;
+        }
+    }
+
+    // <= sm-1 (<= 599px) -> xs (smallest)
+    @media (max-width: 599px) {
+        .font-size-#{$i} {
+            font-size: #{($i * 0.5)}rem !important;
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// RESPONSIVE FONT SIZE UTILITIES - THEO BREAKPOINTS (MudBlazor)
+// ------------------------------------------------------------
+
+// Multipliers cho từng breakpoint để scale font-size theo màn hình
+// Giá trị multipliers có thể điều chỉnh tuỳ design system
+$font-scale-multipliers: (
+    xs: 0.9,    // < 600px - nhỏ hơn mặc định (điện thoại nhỏ)
+    sm: 0.95,   // 600px - 960px - small tablet
+    md: 1,      // 960px - 1280px - tablet lớn / laptop (mặc định)
+    lg: 1.1,    // 1280px - 1920px - desktop
+    xl: 1.15,   // 1920px - 2560px - large desktop / HD
+    xxl: 1.25   // >= 2560px - ultra wide
+);
+
+// Tạo các lớp responsive theo từng breakpoint, ví dụ:
+// .font-size-sm-2 { font-size: 1.9rem } (2 * 0.95)
+@each $breakpoint, $min-width in $breakpoints {
+    @media (min-width: #{$min-width}) {
+        $mult: map-get($font-scale-multipliers, $breakpoint);
+        // Fallback nếu không có multiplier -> 1
+        @if $mult == null { $mult: 1; }
+
+        @for $i from 1 through 10 {
+            .font-size-#{$breakpoint}-#{$i} {
+                font-size: #{($i * $mult)}rem !important;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// FONT WEIGHT UTILITIES
+// ------------------------------------------------------------
+
+// Font weight utilities (.font-weight-bold, .font-weight-300, ...)
+@each $weight in (normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900) {
+    .font-weight-#{$weight} {
+        font-weight: $weight !important;
+    }
+}
+
+// ------------------------------------------------------------
+// WHITE SPACE UTILITIES
+// ------------------------------------------------------------
+
+// White space control (.white-space-nowrap, .white-space-pre, ...)
+@each $ws in (normal, nowrap, pre, pre-line, pre-wrap) {
+    .white-space-#{$ws} {
+        white-space: $ws !important;
+    }
+}
+
+// ------------------------------------------------------------
+// TRANSFORM UTILITIES
+// ------------------------------------------------------------
+
+// Rotate transforms (.transform-rotate-45, .transform-rotate-90, ...)
+@each $angle in $rotations {
+    .transform-rotate-#{$angle} {
+        transform: rotate(#{$angle}deg);
+    }
+}
+
+// Flip transforms (.flip-horizontal, .flip-vertical, .flip-both)
+@each $name, $value in $flips {
+    .flip-#{$name} {
+        transform: $value;
+    }
+
+    // Flip kết hợp rotate (.flip-horizontal-rotate-90, ...)
+    @each $angle in $rotations {
+        .flip-#{$name}-rotate-#{$angle} {
+            transform: $value rotate(#{$angle}deg);
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// POSITION UTILITIES (position + top/left/right/bottom offsets)
+// ------------------------------------------------------------
+
+.position-static { position: static !important; }
+.position-relative { position: relative !important; }
+.position-absolute { position: absolute !important; }
+.position-fixed { position: fixed !important; }
+.position-sticky { position: sticky !important; }
+
+// Generate classes .top-0 .. .top-20, .left-0 .. .left-20, .right-0 .. .right-20, .bottom-0 .. .bottom-20
+@for $i from 0 through $offset-max {
+    $val: if($i == 0, 0px, $i * $offset-step);
+
+    .top-#{$i} { top: $val !important; }
+    .bottom-#{$i} { bottom: $val !important; }
+    .left-#{$i} { left: $val !important; }
+    .right-#{$i} { right: $val !important; }
+}
+
+// Auto helpers
+.top-auto { top: auto !important; }
+.bottom-auto { bottom: auto !important; }
+.left-auto { left: auto !important; }
+.right-auto { right: auto !important; }
+
+// Responsive variants: top-md-0, left-sm-2, etc.
+@each $breakpoint, $min-width in $breakpoints {
+    @media (min-width: #{$min-width}) {
+        @for $i from 0 through $offset-max {
+            $val: if($i == 0, 0px, $i * $offset-step);
+
+            .top-#{$breakpoint}-#{$i} { top: $val !important; }
+            .bottom-#{$breakpoint}-#{$i} { bottom: $val !important; }
+            .left-#{$breakpoint}-#{$i} { left: $val !important; }
+            .right-#{$breakpoint}-#{$i} { right: $val !important; }
+        }
+
+        .top-#{$breakpoint}-auto { top: auto !important; }
+        .bottom-#{$breakpoint}-auto { bottom: auto !important; }
+        .left-#{$breakpoint}-auto { left: auto !important; }
+        .right-#{$breakpoint}-auto { right: auto !important; }
+    }
+}
+
+// ------------------------------------------------------------
+// LIST STYLE UTILITIES
+// ------------------------------------------------------------
+
+// List style types (ul.list-disc, ul.list-decimal, ...)
+@each $style in (disc, circle, square, decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, none) {
+    ul.list-#{$style} {
+        list-style-position: inside;
+        list-style-type: $style;
+        // Marker bold variant
+        &.marker-bold {
+            li::marker {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// BACKGROUND & TEXT TRANSFORM UTILITIES
+// ------------------------------------------------------------
+
+// Remove background
+.bg-none {
+    background: none !important;
+}
+
+// Text transform uppercase
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+// Text transform lowercase
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+
+// Text transform capitalize
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+// ------------------------------------------------------------
+// TEXT ELLIPSIS UTILITIES
+// ------------------------------------------------------------
+
+// Single line ellipsis
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+// Multi-line ellipsis với line-clamp
+.text-ellipsis-1 {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 1;
+}
+
+.text-ellipsis-2 {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 2;
+}
+
+.text-ellipsis-3 {
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    -webkit-line-clamp: 3;
+}
+
+// ------------------------------------------------------------
+// CODE DOCUMENTATION STYLES
+// ------------------------------------------------------------
+
+// Inline code documentation style
+.docs-code {
+    display: inline-block;
+    padding: 0 5px;
+    direction: ltr;
+    font-size: .85em;
+    font-weight: 900;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 1.4;
+    border-radius: 2px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    // Primary theme variant
+    &.docs-code-primary {
+        color: var(--mud-palette-primary);
+        background-color: var(--mud-palette-primary-hover);
+    }
+    // Secondary theme variant
+    &.docs-code-secondary {
+        color: var(--mud-palette-secondary);
+        background-color: var(--mud-palette-secondary-hover);
+    }
+    // Tertiary theme variant
+    &.docs-code-tertiary {
+        color: var(--mud-palette-tertiary);
+        background-color: var(--mud-palette-tertiary-hover);
+    }
+}
+
+// ------------------------------------------------------------
+// ELEVATION HOVER EFFECTS
+// ------------------------------------------------------------
+
+// MudBlazor elevation hover effects (.mud-elevation-hover-1 đến 10)
+@each $i in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) {
+    .mud-elevation-hover-#{$i} {
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: var(--mud-elevation-#{$i});
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// TABLE UTILITIES
+// ------------------------------------------------------------
+
+table {
+    width: 100%;
+    table-layout: auto;
+    // Padding cho cells
+    td, th {
+        padding: 10px;
+    }
+    // Full border table style
+    &.table-border {
+        border-collapse: collapse;
+        border: 1px solid var(--mud-palette-primary);
+
+        td, th {
+            border: 1px solid var(--mud-palette-primary);
+        }
+    }
+    // Row border only style
+    &.table-border-row {
+        border-collapse: collapse;
+
+        tr:not(:last-child) {
+            border-bottom: 1px solid var(--mud-palette-primary);
+        }
+
+        td, th {
+            border: none;
+        }
+    }
+    // Column border only style
+    &.table-border-col {
+        border-collapse: collapse;
+
+        td, th {
+            border-left: 1px solid var(--mud-palette-primary);
+        }
+
+        tr > td:first-child,
+        tr > th:first-child {
+            border-left: none;
+        }
+    }
+    // Auto width column (shrink to content)
+    .width-auto {
+        width: 1%;
+    }
+    // Border style variants (solid, dashed, dotted, none)
+    @each $style in solid, dashed, dotted, none {
+        &.border-style-#{$style} {
+            border-style: #{$style};
+            // Áp dụng style cho row borders
+            &.table-border-row tr:not(:last-child) {
+                border-bottom-style: #{$style};
+            }
+            // Áp dụng style cho column borders
+            &.table-border-col td,
+            &.table-border-col th {
+                border-left-style: #{$style};
+            }
+        }
+        // Border style cho từng cạnh (top, right, bottom, left)
+        @each $dir in top, right, bottom, left {
+            &.border-#{$dir}-style-#{$style} {
+                border-#{$dir}-style: #{$style};
+            }
+        }
+    }
+    // Hover effect cho table rows
+    &.table-hover-row {
+        tr:hover {
+            cursor: pointer;
+            background-color: var(--mud-palette-table-hover);
+        }
+    }
+}
+
+// ------------------------------------------------------------
+// ANIMATION UTILITIES
+// ------------------------------------------------------------
+
+// Shimmer text animation effect
+.animation-text {
+    place-self: center;
+    background: linear-gradient(90deg, #00f, #0ff, #00f) -100% / 200%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+    animation: shimmer-animation-text 2s linear infinite;
+}
+
+// Keyframes cho shimmer animation
+@keyframes shimmer-animation-text {
+    to {
+        background-position: 100%;
+    }
+}
+
+// ------------------------------------------------------------
+// HOVER EFFECTS
+// ------------------------------------------------------------
+
+// Hover lift effect for cards
+.hover-lift {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+}
+
+// Hover scale effect
+.hover-scale {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+// Nội dung này sẽ không được in.
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+// Opacity utilities
+@each $i in (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100) {
+    .opacity-#{$i} {
+        opacity: $i / 100;
+    }
+}
+
+// ------------------------------------------------------------
+// KẾT THÚC FILE
+// ------------------------------------------------------------
