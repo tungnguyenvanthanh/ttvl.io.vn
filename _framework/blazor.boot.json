@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TTVLWeb.Game",
   "resources": {
-    "hash": "sha256-OweewE/tNT1vhkwT77kYJBYVNDR12u1AoeozLgrsAro=",
+    "hash": "sha256-RAbsAG6Zem6gyb8pfe4SjSVBSAfxLaJuUxidRHnqtu8=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "CurrieTechnologies.Razor.SweetAlert2.lvj7kgyo2r.wasm": "CurrieTechnologies.Razor.SweetAlert2.wasm",
@@ -104,10 +104,10 @@
       "System.Xml.XDocument.75levxgv6x.wasm": "System.Xml.XDocument.wasm",
       "System.dqfxtvioy0.wasm": "System.wasm",
       "System.Private.CoreLib.bynjjq5609.wasm": "System.Private.CoreLib.wasm",
-      "TTVLDashboard.CalendarLibrary.5ztvxanyn1.wasm": "TTVLDashboard.CalendarLibrary.wasm",
-      "TTVLDashboard.SharedLibrary.6lbd7kopbj.wasm": "TTVLDashboard.SharedLibrary.wasm",
-      "TTVLShareLibrary.bw63v05h2i.wasm": "TTVLShareLibrary.wasm",
-      "TTVLWeb.Game.ymzensk1oa.wasm": "TTVLWeb.Game.wasm",
+      "TTVLDashboard.CalendarLibrary.2u1dsd02lr.wasm": "TTVLDashboard.CalendarLibrary.wasm",
+      "TTVLDashboard.SharedLibrary.nk1vwqst4n.wasm": "TTVLDashboard.SharedLibrary.wasm",
+      "TTVLShareLibrary.wg1oxihw6b.wasm": "TTVLShareLibrary.wasm",
+      "TTVLWeb.Game.f6sctjxh0t.wasm": "TTVLWeb.Game.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.native.l1ds2rhypd.js": "dotnet.native.js",
       "dotnet.native.etgrtk5jba.wasm": "dotnet.native.wasm",
@@ -234,10 +234,10 @@
       "System.Xml.ReaderWriter.hjgg6qmu49.wasm": "sha256-vQV51bD26W4d9JATg0YIjNszHhK/1UgMaOrcKiL1rQQ=",
       "System.Xml.XDocument.75levxgv6x.wasm": "sha256-i8U4glWpuGMEh+O3BBgRUOr/HIGK3otm6Vb3FozG/1w=",
       "System.dqfxtvioy0.wasm": "sha256-5QZAjy4n7513fYxCXSXTsAkUmRsLiZ8m621Ot4k7FB0=",
-      "TTVLDashboard.CalendarLibrary.5ztvxanyn1.wasm": "sha256-gcJYethVZqBhJpOF6KjyAtjL+4UEY9aeZTZnuwW2EAI=",
-      "TTVLDashboard.SharedLibrary.6lbd7kopbj.wasm": "sha256-Fo1ZNAbZQRrc8Vgcxz0iJgJq/zbeqqdBYCqrv3BQe4I=",
-      "TTVLShareLibrary.bw63v05h2i.wasm": "sha256-q1TUY6KSPeds5bYcaPM2MTLTAcG3UUBs25r7hizSCco=",
-      "TTVLWeb.Game.ymzensk1oa.wasm": "sha256-6pI9LaON0iRjjQa4KudD6zmqp8QqMlKXdpz6mEeYkLc="
+      "TTVLDashboard.CalendarLibrary.2u1dsd02lr.wasm": "sha256-irq+nbrX7yQUjPnpELFAHCZ1joo/wn5sF58d2/w1wUs=",
+      "TTVLDashboard.SharedLibrary.nk1vwqst4n.wasm": "sha256-SR7+umqbbuDNk4umX31ZI2UqWTxYT94z/wU3QgrtIFI=",
+      "TTVLShareLibrary.wg1oxihw6b.wasm": "sha256-kIn3Twki/DzwKMnn2C0FI5b4olQ5XcxI89jocGyLewQ=",
+      "TTVLWeb.Game.f6sctjxh0t.wasm": "sha256-WS0ewqhPfZ2V0xISfW/kpU2FQT0DuB4ibmTMpUqD4XY="
     },
     "libraryInitializers": {
       "_content/TinyMCE.Blazor/TinyMce.Blazor.lib.module.js": "sha256-YWo2eyD7vRsEwgJEvrAuzw9OkKV7xlijfLrNVtX4iWg="
